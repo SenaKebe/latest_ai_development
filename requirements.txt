@@ -1,21 +1,22 @@
-crewai_tools
-sentence-transformers
 # Core Backend
-fastapi==0.109.1
-uvicorn==0.27.0
+fastapi
+uvicorn
+gunicorn
 
-crewai==0.28.8
-langchain==0.1.11
-langchain-google-genai==0.0.11  
-google-generativeai==0.3.2      
-
-chromadb==0.4.22
-sentence-transformers==2.3.1     
-
-PyPDF2==3.0.1                    
-beautifulsoup4==4.12.3           
-
-
-python-dotenv==1.0.0
-requests==2.31.0
+# AI & LLM
+crewai
+langchain
+langchain-google-genai
+google-generativeai
+chromadb
 sentence-transformers
+torch
+
+# PDF & Web Scraping
+PyPDF2
+beautifulsoup4
+
+# Utilities
+python-dotenv
+requests
+pydantic
