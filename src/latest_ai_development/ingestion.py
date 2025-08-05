@@ -9,6 +9,7 @@ def ingest_blog_text(blog_text: str):
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     chunks = splitter.create_documents([blog_text])
     
+    
     # Initialize your custom VectorStore (local SentenceTransformer)
     vectorstore = VectorStore(persist_path=CHROMA_DIR)
     
