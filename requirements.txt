@@ -11,8 +11,7 @@ google-generativeai
 chromadb
 sentence-transformers
 torch
-crewai-tools>=0.12.1
-# PDF & Web Scraping
+crewai-tools>=0.12.1,<1.0.0 
 PyPDF2
 beautifulsoup4
 
