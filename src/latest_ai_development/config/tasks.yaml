@@ -1,0 +1,35 @@
+trend_discovery_task:
+  description: >
+    Research and identify one highly engaging and trending blog topic related to {topic} 
+    based on current social media trends in 2025. Consider virality, relevance, and audience interest. Supplement with these related contexts: {context}
+  expected_output: >
+    A single blog topic title with 1–2 sentence explanation of why it's trending and relevant.
+  agent: trend_hunter
+
+content_writing_task:
+  description: >
+    Write a detailed blog post based on the provided topic. Use the requested tone: {tone}, and 
+    make sure the content speaks effectively to the target audience: {audience}.
+    Ensure structure includes: intro, 2-3 main sections, and a conclusion.
+  expected_output: >
+    A full blog post in markdown format (without '```'), clearly structured and aligned with the tone and audience.
+  agent: writer
+
+editing_task:
+  description: >
+    Review and edit the blog post for grammar, structure, tone consistency, clarity, and emotional impact.
+    Improve the flow and make sure it adheres to the writing style appropriate for {platform}.
+  expected_output: >
+    A polished version of the blog post with improvements in tone, readability, and grammar.
+  agent: editor
+
+summarizing_task:
+  description: >
+    Generate a concise meta description and a catchy short summary (max 280 characters) for social media sharing,
+    based on the final blog content. Highlight the core value of the post.
+  expected_output: >
+    {
+      "meta_description": "...",
+      "social_snippet": "..."
+    }
+  agent: summarizer
