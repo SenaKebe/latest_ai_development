@@ -13,3 +13,8 @@ beautifulsoup4
 requests
 python-dotenv
 pydantic
+
+
+
+
+
